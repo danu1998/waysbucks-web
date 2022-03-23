@@ -1,0 +1,71 @@
+// npx sequelize-cli model:generate --name user --attributes firstName:string,lastName:string,email:string
+
+// npx sequelize-cli model:generate --name product --attributes name:string,price:integer,image:string
+
+// npx sequelize-cli model:generate --name toping --attributes name:string,price:integer,image:string
+
+// "use strict";
+// const { Model } = require("sequelize");
+// module.exports = (sequelize, DataTypes) => {
+//   class user extends Model {
+//     /**
+//      * Helper method for defining associations.
+//      * This method is not a part of Sequelize lifecycle.
+//      * The `models/index` file will call this method automatically.
+//      */
+//     static associate(models) {
+//       // define association here
+//       user.hasOne(models.profile, {
+//         as: "profile",
+//         foreignKey: {
+//           name: "idUSer",
+//         },
+//       });
+
+//       user.hasMany(models.product, {
+//         as: "products",
+//         foreignKey: {
+//           name: "idUser",
+//         },
+//       });
+
+//       user.hasMany(models.toping, {
+//         as: "topings",
+//         foreignKey: {
+//           name: "idUser",
+//         },
+//       });
+//     }
+//   }
+//   user.init(
+//     {
+//       fullName: DataTypes.STRING,
+//       email: DataTypes.STRING,
+//       password: DataTypes.STRING,
+//       status: DataTypes.STRING,
+//     },
+//     {
+//       sequelize,
+//       modelName: "user",
+//     }
+//   );
+//   return user;
+// };
+
+
+
+//   {state.cart.length > 0 ? (
+//             <div
+//               className="rounded-pill bg-danger text-center text-white"
+//               style={{ width: "24px", height: "24px" }}
+//             >
+//               {state.cart.length}
+//             </div>
+//           ) : (
+//             <div
+//               className="rounded-pill bg-danger text-center text-white"
+//               style={{ width: "24px", height: "24px" }}
+//             >
+//               0
+//             </div>
+//           )}
