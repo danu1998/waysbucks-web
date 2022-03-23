@@ -1,0 +1,81 @@
+// const handleCart = () => {
+//   dispatch({
+//     type: "ADD_TO_CART",
+//     payload: {
+//       id: product.id,
+//       product: product,
+//       topings: selectedToping,
+//       initialPrice: subTotal,
+//       quantity: 1,
+//       subTotal: subTotal,
+//     },
+//   });
+//   dispatch({
+//     type: "SAVE_CART",
+//   });
+//   setCheckedToping({});
+//   navigate("/detail/" + product.id);
+// };
+// Space =========== //
+
+// const [objAdd, setObjAdd] = useState({
+//   id: id,
+//   idProduct: product.id,
+//   idToping: topings.id,
+//   qty: 1,
+// });
+
+// const handleToCart = async (e) => {
+//   e.preventDefault();
+//   const body = {
+//     idProduct: product.id,
+//     idToping: selectedTopingId,
+//     total: subTotal,
+//     qty: 1,
+//   };
+//   console.log(body);
+//   const data = JSON.stringify(body);
+
+//   const config = {
+//     method: "POST",
+//     headers: {
+//       Authorization: "Basic " + localStorage.token,
+//       "Content-type": "application/json",
+//     },
+//     data,
+//   };
+//   await API.post("/order", body, config);
+// };
+// const [objAdd, setObjAdd] = useState({
+//   idProduct: product.id,
+//   idToping: topings.id,
+// });
+
+
+  // const getProduct = async (id) => {
+  //   try {
+  //     const response = await API.get("/product/" + id);
+  //     console.log(response.data.data);
+  //     setProduct(response.data.data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+  // // ===== || =====
+  // // Get seluruh toping
+  // const getTopings = async () => {
+  //   try {
+  //     const response = await API.get("/topings");
+  //     console.log(response);
+  //     setTopings(
+  //       response.data.data.topings.map((item) => {
+  //         return { ...item, checked: false };
+  //       })
+  //     );
+  //     console.log(topings);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  // // ===== || =====
